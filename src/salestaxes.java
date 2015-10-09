@@ -1,20 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import java.math.BigDecimal;
 
-/**
- *
- * @author LTran
- */
 public class salestaxes {
-
-    /**
-     * @param args the command line arguments
-     */
+    static BigDecimal appleCost = new BigDecimal("1.90");
     public static void main(String[] args) {
-        // TODO code application logic here
+        appleCost.setScale(2, BigDecimal.ROUND_HALF_UP);
+        ShoppingBasket shoppingBasket = new ShoppingBasket();
+        Item apple;
+        apple = new Item("Apple", "Fruit", 1, appleCost); 
+        
+        shoppingBasket.addShoppingItem(apple);
+        shoppingBasket.getShoppingItems();
+        System.out.println(shoppingBasket.getShoppingItems());
+        
+        BigDecimal price = apple.getPrice();
+        System.out.println(price.multiply(new BigDecimal(2)));
+        
     }
     
 }
