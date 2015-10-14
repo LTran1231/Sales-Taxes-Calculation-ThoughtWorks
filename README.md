@@ -45,3 +45,35 @@ Output 3:
 - 1 imported box of chocolates: 11.85
 - Sales Taxes: 6.70
 - Total: 74.68
+
+---
+## How to Run
+- clone this repository - [how to clone](https://help.github.com/articles/cloning-a-repository/)
+- open this repository in NetBeans
+- Once NetBeans is open click run from the menu > run project 
+
+## Assumptions
+- basic sales rate is 10% on all goods except for book, food, and medical products
+- 5% additional for all imported goods
+- rounded to the nearest 0.05
+
+### Item 
+contains the item attributes
+- name - string
+- category - string
+- type - string
+- price - BigDecimal
+- qtn - BigDecimal
+
+### ShoppingBasket
+- calculate the subtotal, sales tax, and total for each item added to the same shopping basket
+
+### SalesTax
+- calculate the sales tax based on the assumptions made above
+- if the item belongs to category book, food, or medical products
+- then the sales tax is 0%
+- otherwise the sales tax is 10%
+- if the item type is imported 
+- then add an additional of 5% to the sales tax
+
+
