@@ -57,7 +57,7 @@ Output 3:
 - 5% additional for all imported goods
 - rounded to the nearest 0.05
 
-### Item 
+## Item 
 contains the item attributes
 - name - string
 - category - string
@@ -65,10 +65,10 @@ contains the item attributes
 - price - BigDecimal
 - qtn - BigDecimal
 
-### ShoppingBasket
+## ShoppingBasket
 - calculate the subtotal, sales tax, and total for each item added to the same shopping basket
 
-### SalesTax
+## SalesTax
 - calculate the sales tax based on the assumptions made above
 - if the item belongs to category book, food, or medical products
 - then the sales tax is 0%
@@ -76,4 +76,5 @@ contains the item attributes
 - if the item type is imported 
 - then add an additional of 5% to the sales tax
 
-
+## Notes
+This program is written in Java. Please note that I've recently learned Java for this challenge. At the Dev Bootcamp, the primary language that we used was Ruby.
