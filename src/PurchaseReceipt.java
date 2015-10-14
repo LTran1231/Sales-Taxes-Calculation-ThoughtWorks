@@ -20,9 +20,9 @@ public class PurchaseReceipt {
         System.out.println(chocolate_bar.getQtn() + "   " + chocolate_bar.getName()+ "                      $" + chocolate_bar.getPrice());
         System.out.println("----------------------------------------------------");
         System.out.println("Subtotal: $" + shoppingBasket_1.getSubTotal());
-        System.out.println("Sales tax: $" + shoppingBasket_1.getSalesTax());
+        System.out.println("Sales taxes: $" + shoppingBasket_1.getSalesTax());
         System.out.println("Total: $" + shoppingBasket_1.getTotal());
-        System.out.println("===============================================================================");
+        System.out.println("==================================END==========================================");
 
 // ------------------------------------------------------------------------- 
         System.out.println();
@@ -42,9 +42,9 @@ public class PurchaseReceipt {
         System.out.println(bottle_of_perfume.getQtn() + "   " + bottle_of_perfume.getName() + "         $" + bottle_of_perfume.getPrice());
         System.out.println("----------------------------------------------------");
         System.out.println("Subtotal: $" + shoppingBasket_2.getSubTotal());
-        System.out.println("Sales tax: $" + shoppingBasket_2.getSalesTax());
+        System.out.println("Sales taxes: $" + shoppingBasket_2.getSalesTax());
         System.out.println("Total: $" + shoppingBasket_2.getTotal());
-        System.out.println("===============================================================================");
+        System.out.println("==================================END==========================================");
 // --------------------------------------------------------------------------
         System.out.println();
         System.out.println("CUSTOMER SHOPPING RECEIPT 3");
@@ -68,12 +68,13 @@ public class PurchaseReceipt {
         System.out.println(bottle_of_perfume_2.getQtn() + "   " + bottle_of_perfume_2.getName() + "                  $" + bottle_of_perfume_2.getPrice());
         System.out.println(packet_of_headache_pills.getQtn() + "   " + packet_of_headache_pills.getName() + "           $" + packet_of_headache_pills.getPrice());
         System.out.println(box_of_imported_chocolates.getQtn() + "   " + box_of_imported_chocolates.getName() + "         $" + box_of_imported_chocolates.getPrice());
-
+        System.out.println("----------------------------------------------------");
         System.out.println("Subtotal: $" + shoppingBasket_3.getSubTotal());
-        System.out.println("Sales tax: $" + shoppingBasket_3.getSalesTax());
+        System.out.println("Sales taxes: $" + shoppingBasket_3.getSalesTax());
         System.out.println("Total: $" + shoppingBasket_3.getTotal());
-        System.out.println("------------------------------------------------------------------------------");
-  
+        System.out.println("==================================END==========================================");
+
+        
     }
     
 }
