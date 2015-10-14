@@ -61,7 +61,6 @@ public class PurchaseReceiptTest {
         shoppingBasket_2.addShoppingItem(bottle_of_perfume);
         assertThat(shoppingBasket_2.getTotal().subtract(new BigDecimal("10.50")), is(new BigDecimal("54.65")));
 
-        
         assertThat(shoppingBasket_2.getSalesTax(), is(new BigDecimal("7.65")));
         assertThat(shoppingBasket_2.getTotal(), is(new BigDecimal("65.15")));
     }
